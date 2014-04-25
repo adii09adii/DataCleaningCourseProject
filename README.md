@@ -1,12 +1,12 @@
 DataCleaningCourseProject
 =========================
 
-1.Path is set to UCI HAR Dataset and all files (X_test,Y_test,Subject_test,X_train,Y_train,Subject_train,features.txt,Activitylabels.txt) are kept here.
+1.Path is set to Currentfolder and all files (X_test,Y_test,Subject_test,X_train,Y_train,Subject_train,features.txt,activity_labels.txt) are kept here.
 2.All text files are kept in same single folder so read it directly, instead of providing path to sub folder
 
 3.run_analysis.R are is executed at path set to above folder.
 
-4.File Used:X_test,Y_test,Subject_test,X_train,Y_train,Subject_train,features.txt,Activitylabels.txt)
+4.File Used:X_test,Y_test,Subject_test,X_train,Y_train,Subject_train,features.txt,activity_labels.txt)
 
 5.newtestdata : result of "Merging all test data"
 
@@ -32,4 +32,4 @@ DataCleaningCourseProject
 
 14.Projectfinaltidydata2.pdf is pdf file of output
 
-15.Projectfinaltidydata.csv id csv format of output 
+15.Projectfinaltidydata.csv is csv format of output 
