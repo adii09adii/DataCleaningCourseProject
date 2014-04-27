@@ -1,6 +1,8 @@
 ###Read all files
 
 ##I have kept all files at same location
+## Reading all files
+
 subject_test <- read.table("subject_test.txt")
 X_test <- read.table("X_test.txt")
 Y_test <- read.table("Y_test.txt")
@@ -54,14 +56,17 @@ matches <- unique (grep(paste(toMatch1,collapse="|"), names(X_test), value=TRUE)
 ###########
 ##matches
 
-##adding Remaining cloumn- total cloumn needed in final result
+##adding Remaining column - total cloumn needed in final result 
+##removed Activity Code column
  newmatches <- c("Subject","ActivityLabels",matches)
 # newmatches
 
-###Required final data including every step from 1-5
+###Required final data including every step from 1-4
 finalresultdata <- finalresult[,newmatches]
-#names(resulttwo)
-#####
+
+#####Performing tidy data 5th step
+##Calculating required tidy data based on Subject and Activity Labels
+
 datamelt <- melt(finalresultdata, id = c("Subject","ActivityLabels"))
 resultedfinaltidydata <- dcast(datamelt, Subject + ActivityLabels~variable,mean)
 

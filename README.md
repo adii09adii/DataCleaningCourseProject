@@ -1,6 +1,12 @@
 DataCleaningCourseProject
 =========================
 
+
+Codebook.md - defines details about how run_anaysis.R work (to do steps)
+run_analysis.R - Consist of Code to clean and merge data as required by course project 
+					and Also produces tidy as required based on Activity Labels and Subject 
+
+
 1.Path is set to Currentfolder and all files (X_test,Y_test,Subject_test,X_train,Y_train,Subject_train,features.txt,activity_labels.txt) are kept here.
 2.All text files are kept in same single folder so read it directly, instead of providing path to sub folder
 
@@ -22,7 +28,7 @@ DataCleaningCourseProject
 9.finalresultdata :Extracts only the measurements on the mean and standard deviation for each measurement. 
 					completed and result of (1-4) steps
 					
-10.Taking previous merged data : Assuming output of previous step (1-4)steps calculating 5th step of tidy data on resulted data frame									
+10.Taking previous merged data : Assuming output of previous step (1-4)steps, calculating 5th step of tidy data, on resulted data frame	from 4th step								
 
 11.On basis of "Subject" and "ActivityLabels", I have grouped table and took mean by using melt and dcast
 
