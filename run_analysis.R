@@ -64,7 +64,7 @@ matches <- unique (grep(paste(toMatch1,collapse="|"), names(X_test), value=TRUE)
 ###Required final data including every step from 1-4
 finalresultdata <- finalresult[,newmatches]
 
-#####Performing tidy data 5th step
+#####Performing tidy data 5th step on resulted data frame in last step
 ##Calculating required tidy data based on Subject and Activity Labels
 
 datamelt <- melt(finalresultdata, id = c("Subject","ActivityLabels"))
